@@ -11,6 +11,10 @@ def server_static(filepath):
 def index():
     return template('index')
 
+@route('/page2')
+def page2():
+    return template('page2')
+
 
 #main code
 run(reloader=True)
